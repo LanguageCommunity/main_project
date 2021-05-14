@@ -1,4 +1,4 @@
-package Conversa;
+package chat;
 import java.util.Date;
 
 public class HistoricoConversa {

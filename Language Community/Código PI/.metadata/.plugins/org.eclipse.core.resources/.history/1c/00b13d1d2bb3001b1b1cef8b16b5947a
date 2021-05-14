@@ -1,0 +1,10 @@
+package user;
+
+public interface Premium {
+
+publci String desPacotePremium;
+
+	String getDesPacotePremium();
+
+	public void setDesPacotePremium(String desPacotePremium);
+}

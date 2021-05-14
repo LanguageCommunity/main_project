@@ -1,0 +1,8 @@
+package discover;
+
+public class Discover {
+
+	public Discover() {
+		
+	}
+}

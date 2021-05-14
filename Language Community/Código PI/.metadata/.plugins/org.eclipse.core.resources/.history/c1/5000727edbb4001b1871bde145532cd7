@@ -1,0 +1,9 @@
+package discover;
+
+public class Discover {
+
+	public Discover() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

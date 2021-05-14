@@ -1,0 +1,9 @@
+package chat;
+
+public class ConversaGrupo {
+
+	public ConversaGrupo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

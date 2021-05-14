@@ -1,0 +1,14 @@
+package discover;
+
+public class Discover {
+
+	public Discover() {
+		
+	}
+	
+	public void pesquisa() {}
+	
+	public void voz() {}
+	
+	public void
+}

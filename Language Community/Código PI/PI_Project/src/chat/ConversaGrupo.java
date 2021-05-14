@@ -1,4 +1,4 @@
-package Conversa;
+package chat;
 
 public class ConversaGrupo extends Conversas{
     protected String nomeGrupo;
@@ -6,8 +6,8 @@ public class ConversaGrupo extends Conversas{
     protected String idiomaGrupo;
     protected byte fotoGrupo;
 
-    public ConversaGrupo(boolean notificacao, int qtdNotificacao, String nomeGrupo, String descricaoGrupo, String idiomaGrupo, byte fotoGrupo) {
-        super(notificacao, qtdNotificacao);
+    public ConversaGrupo(boolean notificacao, int qtdNotificacao, String texto, String nomeGrupo, String descricaoGrupo, String idiomaGrupo, byte fotoGrupo) {
+        super(notificacao, qtdNotificacao, texto);
         setDescricaoGrupo(descricaoGrupo);
         setIdiomaGrupo(idiomaGrupo);
         setNomeGrupo(nomeGrupo);

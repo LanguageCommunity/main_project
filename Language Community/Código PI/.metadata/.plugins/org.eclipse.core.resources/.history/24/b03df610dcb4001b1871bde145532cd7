@@ -1,0 +1,22 @@
+package discover;
+
+public class Discover {
+
+	private String search;
+	private byte voz;
+	private String descricaoPostagem;
+	
+	public Discover() {
+		
+	}
+	
+	public String pesquisa() {
+		return search;
+	}
+	
+	public void voz() {}
+	
+	public void visualizarDetalhes() {}
+	
+	public void enviarSolicitacao() {}
+}

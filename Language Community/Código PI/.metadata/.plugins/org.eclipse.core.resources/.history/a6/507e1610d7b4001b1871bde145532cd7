@@ -1,0 +1,9 @@
+package chat;
+
+public class HistoricoConversa {
+
+	public HistoricoConversa() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

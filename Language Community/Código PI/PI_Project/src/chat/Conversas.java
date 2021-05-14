@@ -1,15 +1,25 @@
-package Conversa;
+package chat;
 
 public class Conversas {
     protected boolean notificacao;
     protected int qtdNotificacao;
+    protected String texto;
 
-    public Conversas (boolean notificacao, int qtdNotificacao) {
+    public Conversas (boolean notificacao, int qtdNotificacao, String texto) {
         setNotificacao(notificacao);
         setQtdNotificacao(qtdNotificacao);
+        setTexto(texto);
     }
 
-    public boolean getNotificacao() {
+    public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+
+	public boolean getNotificacao() {
         return notificacao;
     }
 
@@ -25,12 +35,9 @@ public class Conversas {
         this.qtdNotificacao = qtdNotificacao;
     }
 
-    public void enviarTxt(char texto) {
-
-    }
 
     public void enviarAudio(byte audio) {
-
+    	
     }
 
     public void enviarFoto(byte foto) {
@@ -38,7 +45,7 @@ public class Conversas {
     }
 
     public void ligar() {
-
+    	
     }
 
     public byte visualizarFoto() {

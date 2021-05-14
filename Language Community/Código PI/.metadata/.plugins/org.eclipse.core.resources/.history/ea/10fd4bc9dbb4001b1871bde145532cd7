@@ -1,0 +1,10 @@
+package discover;
+
+public class Discover {
+
+	public Discover() {
+		
+	}
+	
+	public String pesquisa() {}
+}

@@ -1,0 +1,9 @@
+package forum;
+
+public class HistoricoForum {
+
+	public HistoricoForum() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
