@@ -1,0 +1,12 @@
+package Conversa;
+
+public class ConversaIndividual extends Conversas{
+
+    public ConversaIndividual(boolean notificacao, int qtdNotificacao) {
+        super(notificacao, qtdNotificacao);
+    }
+
+    public void convidarParaGrupo() {
+
+    }
+}
