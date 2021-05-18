@@ -15,13 +15,13 @@ public class Language {
 		System.out.println(teacher01.getNome());
 		
 		// Yuri
-		ConversaIndividual A =  new ConversaIndividual(true, 1, "");
+		ConversaIndividual A =  new ConversaIndividual(true, 1, "", null, null); 
 		A.setTexto("OI");
 		A.setQtdNotificacao(10);
 		System.out.println(A.getTexto() + A.getQtdNotificacao());
 		
 		// Camila
-		Forum lolzinho = new Forum(true, "Yasuo foda", "Opa opa");
+		Forum lolzinho = new Forum(true, "Yasuo foda", "Opa opa"); 
 		lolzinho.setNomePostagem("Yasuo Helou");
 		System.out.println(lolzinho.getNomePostagem());
 	}
