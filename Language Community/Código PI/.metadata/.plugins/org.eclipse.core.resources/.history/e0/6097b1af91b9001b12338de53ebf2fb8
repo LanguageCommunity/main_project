@@ -1,0 +1,10 @@
+package user;
+
+public interface Premium {
+	
+	public void avaliarUsuarios();
+	public void acessarFlashCards();
+	public void participarConquistasMetas();
+	public void verFrequencia();
+	public void acessarTopUsuarios();
+}

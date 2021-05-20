@@ -9,10 +9,10 @@ private String nivelIdioma;
 
 	public Aluno(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
 			   String idiomaConhecimento, String interesse, int numero, String email, String senha,
-			   byte fotoPerfil, long avaliacao, boolean tipoConta, String idiomaInteresse, String nivelIdioma) {
+			   byte fotoPerfil, int tipoConta, String idiomaInteresse, String nivelIdioma) {
 		
 		super(nome, dataNascimento, sexualidade, endereco, descricao, idiomaConhecimento, interesse, numero,
-				email, senha, fotoPerfil, avaliacao, tipoConta);
+				email, senha, fotoPerfil, tipoConta);
 		
 		setIdiomaInteresse(idiomaInteresse);
 		setNivelIdioma(nivelIdioma);

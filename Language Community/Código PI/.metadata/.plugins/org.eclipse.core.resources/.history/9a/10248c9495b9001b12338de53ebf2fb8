@@ -1,0 +1,12 @@
+package user;
+
+public interface Premium {
+	
+	public int getAssinar();
+	public void setAssinar(int tipoConta);
+	public void setAvaliarUsuarios(int avaliacao);
+	public void getAcessarFlashCards();
+	public void getParticiparConquistasMetas();
+	public void getVerFrequencia();
+	public void getAcessarTopUsuarios();
+}

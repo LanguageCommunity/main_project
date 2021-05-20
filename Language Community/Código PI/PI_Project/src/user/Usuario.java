@@ -2,7 +2,7 @@ package user;
 
 import java.util.Date;
 
-public class Usuario {
+public class Usuario implements Premium {
 
 private String nome;
 private Date dataNascimento;
@@ -15,12 +15,12 @@ private int numero;
 private String email;
 private String senha;
 private byte fotoPerfil;
-private long avaliacao;
-private boolean tipoConta;
+private long avaliacao = 0;
+private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 
 	public Usuario(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
 				   String idiomaConhecimento, String interesse, int numero, String email, String senha,
-				   byte fotoPerfil, long avaliacao, boolean tipoConta) {
+				   byte fotoPerfil, int tipoConta) {
 		
 		setNome(nome);
 		setDataNascimento(dataNascimento);
@@ -33,10 +33,11 @@ private boolean tipoConta;
 		setEmail(email);
 		setSenha(senha);
 		setFotoPerfil(fotoPerfil);
-		setAvaliacao(avaliacao);
-		setTipoConta(tipoConta);
+		setAssinar(tipoConta);
 	}
 
+	// Usuário metodos
+	
 	protected String getNome() {
 		return nome;
 	}
@@ -125,19 +126,65 @@ private boolean tipoConta;
 		this.fotoPerfil = fotoPerfil;
 	}
 
-	public long getAvaliacao() {
-		return avaliacao;
-	}
-
-	public void setAvaliacao(long avaliacao) {
-		this.avaliacao = avaliacao;
-	}
-
-	public boolean isTipoConta() {
+	// Premium methods;
+	
+	@Override
+	public int getAssinar() {
 		return tipoConta;
 	}
-
-	public void setTipoConta(boolean tipoConta) {
+	
+	@Override
+	public void setAssinar(int tipoConta) {
 		this.tipoConta = tipoConta;
+	}	
+	
+	public long getAvaliarUsuario() {
+		// Arrumar um jeito de bloquear o acesso
+		return avaliacao;
+	}
+	
+	@Override
+	public void setAvaliarUsuario(long avaliacao) {
+		if(tipoConta == 1) {
+			this.avaliacao = avaliacao;
+		} else {
+			System.out.println("Tu é pobre!");
+		}
+	}
+
+	@Override
+	public void getAcessarFlashCards() {
+		if(tipoConta == 1) {
+			// http:????
+		} else {
+			System.out.print("Tu é pobre!");
+		}
+	}
+
+	@Override
+	public void getParticiparConquistasMetas() {
+		if(tipoConta == 1) {
+			// http:????
+		} else {
+			System.out.print("Tu é pobre!");
+		}
+	}
+
+	@Override
+	public void getVerFrequencia() {
+		if(tipoConta == 1) {
+			// http:????
+		} else {
+			System.out.print("Tu é pobre!");
+		}
+	}
+
+	@Override
+	public void getAcessarTopUsuarios() {
+		if(tipoConta == 1) {
+			// http:????
+		} else {
+			System.out.print("Tu é pobre!");
+		}
 	}
 }

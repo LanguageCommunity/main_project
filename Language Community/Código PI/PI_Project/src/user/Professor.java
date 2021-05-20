@@ -9,11 +9,11 @@ private byte certificacao;
 
 	public Professor(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
 			   	 	 String idiomaConhecimento, String interesse, int numero, String email, String senha,
-			   	 	 byte fotoPerfil, long avaliacao, boolean tipoConta, long valGratificacao, byte certificacao) {
+			   	 	 byte fotoPerfil, int tipoConta, long valGratificacao, byte certificacao) {
 		
 		
 		super(nome, dataNascimento, sexualidade, endereco, descricao, idiomaConhecimento, interesse, numero,
-				email, senha, fotoPerfil, avaliacao, tipoConta);
+				email, senha, fotoPerfil, tipoConta);
 		
 		setValGratificacao(valGratificacao);
 		setCertificacao(certificacao);

@@ -1,19 +1,12 @@
 package user;
 
-public class Premium {
-
-private String desPacotePremium;
+public interface Premium {
 	
-	public Premium(String desPacotePremium) {
-		setDesPacotePremium(desPacotePremium);
-	}
-
-	public String getDesPacotePremium() {
-		return desPacotePremium;
-	}
-
-	public void setDesPacotePremium(String desPacotePremium) {
-		this.desPacotePremium = desPacotePremium;
-	}
-	
+	public int getAssinar();
+	public void setAssinar(int tipoConta);
+	public void setAvaliarUsuario(long avaliacao);
+	public void getAcessarFlashCards();
+	public void getParticiparConquistasMetas();
+	public void getVerFrequencia();
+	public void getAcessarTopUsuarios();
 }
