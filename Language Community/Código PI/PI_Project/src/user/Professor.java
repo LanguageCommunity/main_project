@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Professor extends Usuario {
 
-private long valGratificacao;
+private double valGratificacao;
 private byte certificacao;
 
 	public Professor(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
 			   	 	 String idiomaConhecimento, String interesse, int numero, String email, String senha,
-			   	 	 byte fotoPerfil, int tipoConta, long valGratificacao, byte certificacao) {
+			   	 	 byte fotoPerfil, int tipoConta, double valGratificacao, byte certificacao) {
 		
 		
 		super(nome, dataNascimento, sexualidade, endereco, descricao, idiomaConhecimento, interesse, numero,
@@ -18,12 +18,14 @@ private byte certificacao;
 		setValGratificacao(valGratificacao);
 		setCertificacao(certificacao);
 	}
-
-	public long getValGratificacao() {
+	
+	// getters e setters
+	
+	public double getValGratificacao() {
 		return valGratificacao;
 	}
 
-	public void setValGratificacao(long valGratificacao) {
+	public void setValGratificacao(double valGratificacao) {
 		this.valGratificacao = valGratificacao;
 	}
 

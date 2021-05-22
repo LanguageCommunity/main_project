@@ -1,0 +1,37 @@
+package user;
+
+import java.util.Date;
+
+public class Professor extends Usuario {
+
+private float valGratificacao;
+private byte certificacao;
+
+	public Professor(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
+			   	 	 String idiomaConhecimento, String interesse, int numero, String email, String senha,
+			   	 	 byte fotoPerfil, int tipoConta, float valGratificacao, byte certificacao) {
+		
+		
+		super(nome, dataNascimento, sexualidade, endereco, descricao, idiomaConhecimento, interesse, numero,
+				email, senha, fotoPerfil, tipoConta);
+		
+		setValGratificacao(valGratificacao);
+		setCertificacao(certificacao);
+	}
+
+	public long getValGratificacao() {
+		return valGratificacao;
+	}
+
+	public void setValGratificacao(float valGratificacao) {
+		this.valGratificacao = valGratificacao;
+	}
+
+	public byte getCertificacao() {
+		return certificacao;
+	}
+
+	public void setCertificacao(byte certificacao) {
+		this.certificacao = certificacao;
+	}
+}

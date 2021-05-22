@@ -1,5 +1,7 @@
 package discover;
 
+// Discover precisa de interface para testar.
+
 public class Discover {
 
 	private String search;

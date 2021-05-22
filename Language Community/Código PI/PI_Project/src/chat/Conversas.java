@@ -1,14 +1,20 @@
 package chat;
 
+import java.util.Date;
+
 public class Conversas {
     protected boolean notificacao;
     protected int qtdNotificacao;
     protected String texto;
-
-    public Conversas (boolean notificacao, int qtdNotificacao, String texto) {
+    protected Date dataMensagem;
+    protected Date horaMensagem;
+    
+    public Conversas (boolean notificacao, int qtdNotificacao, String texto, Date dataMensagem, Date horaMensagem) {
         setNotificacao(notificacao);
         setQtdNotificacao(qtdNotificacao);
         setTexto(texto);
+        setDataMensagem(dataMensagem);
+        setHoraMensagem(horaMensagem);
     }
 
     public String getTexto() {
@@ -50,5 +56,25 @@ public class Conversas {
 
     public byte visualizarFoto() {
         return visualizarFoto();
+    }
+
+    public Date getDataMensagem() {
+        return dataMensagem;
+    }
+
+    public void setDataMensagem(Date dataMensagem) {
+        this.dataMensagem = dataMensagem;
+    }
+
+    public Date getHoraMensagem() {
+        return horaMensagem;
+    }
+
+    public void setHoraMensagem(Date horaMensagem) {
+        this.horaMensagem = horaMensagem;
+    }
+
+    public void salvarConversa() {
+
     }
 }

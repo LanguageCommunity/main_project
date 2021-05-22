@@ -1,14 +1,19 @@
 package chat;
 
+import java.util.Date;
+
 public class ConversaGrupo extends Conversas{
     protected String nomeGrupo;
     protected String descricaoGrupo;
     protected String idiomaGrupo;
     protected byte fotoGrupo;
 
-    public ConversaGrupo(boolean notificacao, int qtdNotificacao, String texto, String nomeGrupo, String descricaoGrupo, String idiomaGrupo, byte fotoGrupo) {
-        super(notificacao, qtdNotificacao, texto);
-        setDescricaoGrupo(descricaoGrupo);
+    public ConversaGrupo(boolean notificacao, int qtdNotificacao, String texto, String nomeGrupo, String descricaoGrupo, String idiomaGrupo, byte fotoGrupo,
+    		Date dataMensagem, Date horaMensagem) {
+        
+    	super(notificacao, qtdNotificacao, texto, dataMensagem, horaMensagem);
+        
+    	setDescricaoGrupo(descricaoGrupo);
         setIdiomaGrupo(idiomaGrupo);
         setNomeGrupo(nomeGrupo);
         setFotoGrupo(fotoGrupo);

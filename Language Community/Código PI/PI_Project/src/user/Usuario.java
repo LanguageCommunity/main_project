@@ -21,6 +21,8 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 	public Usuario(String nome, Date dataNascimento, String sexualidade, String endereco, String descricao,
 				   String idiomaConhecimento, String interesse, int numero, String email, String senha,
 				   byte fotoPerfil, int tipoConta) {
+	
+	// setters e getters
 		
 		setNome(nome);
 		setDataNascimento(dataNascimento);
@@ -126,7 +128,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		this.fotoPerfil = fotoPerfil;
 	}
 
-	// Premium methods;
+	// Premium métodos com interface
 	
 	@Override
 	public int getAssinar() {

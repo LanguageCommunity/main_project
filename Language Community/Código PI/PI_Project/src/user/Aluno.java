@@ -18,6 +18,8 @@ private String nivelIdioma;
 		setNivelIdioma(nivelIdioma);
 	}
 
+	// getters e setters
+	
 	public String getIdiomaInteresse() {
 		return idiomaInteresse;
 	}

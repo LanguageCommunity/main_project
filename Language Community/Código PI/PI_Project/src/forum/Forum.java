@@ -1,20 +1,26 @@
 package forum;
 
+import java.util.Date;
+
 public class Forum {
 	private boolean tipoPostagem;
 	private String nomePostagem;
 	private String descricaoPostagem;
+	private Date dataPostagem;
+	private Date horaPostagem;
 
 
-		public Forum(boolean tipoPostagem, String nomePostagem, String descricaoPostagem) {
+		public Forum(boolean tipoPostagem, String nomePostagem, String descricaoPostagem, Date dataPostagem, Date horaPostagem) {
 			setTipoPostagem(tipoPostagem);
 			setNomePostagem(nomePostagem);
 			setDescricaoPostagem(descricaoPostagem);
+			setDataPostagem(dataPostagem);
+			setHoraPostagem(horaPostagem);
 		}
 
 		//get e set
 		
-			public boolean isTipoPostagem() {
+			public boolean getTipoPostagem() {
 				return tipoPostagem;
 			}
 	
@@ -43,7 +49,7 @@ public class Forum {
 				this.descricaoPostagem = descricaoPostagem;
 			}
 		
-		// metodos
+			// metodos
 		
 			public void curtir() {
 					
@@ -68,7 +74,9 @@ public class Forum {
 					
 			}
 				
-			public String criarTopico(String nomePostagem, String descricaoPostagem) {
+			public String criarTopico(String nomePostagem, String descricaoPostagem) { 
+				// Provavelmente irá retornar um vetor de objeto
+				
 				setNomePostagem(nomePostagem);
 				setDescricaoPostagem(descricaoPostagem);
 				return getNomePostagem();
@@ -77,4 +85,24 @@ public class Forum {
 			public void reportar() {
 					
 			}
+			
+			public Date getDataPostagem() {
+				return dataPostagem;
+			}
+
+			public void setDataPostagem(Date dataPostagem) {
+				this.dataPostagem = dataPostagem;
+			}
+
+			public Date getHoraPostagem() {
+				return horaPostagem;
+			}
+
+			public void setHoraPostagem(Date horaPostagem) {
+				this.horaPostagem = horaPostagem;
+			}
+			
+			public void salvarpostagem() {
+				
+			}	
 }
