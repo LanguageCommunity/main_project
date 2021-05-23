@@ -48,7 +48,5 @@ public class Language {
 		lolzinho.setNomePostagem("Yasuo Helou");
 		System.out.println("Título postagem " + lolzinho.getNomePostagem() + ". Descrição: " + lolzinho.getDescricaoPostagem());
 		
-		
-		// Os métodos da classe Discover funcionam somente com interface.
 	}
 }

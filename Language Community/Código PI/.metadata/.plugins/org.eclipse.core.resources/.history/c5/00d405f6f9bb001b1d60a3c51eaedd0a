@@ -14,41 +14,30 @@ public class Language {
 		student01.setNivelIdioma("Básico");
 		
 		// Tentando avaliar o usuário sem ainda ser Premium
-		student01.setAvaliarUsuario(1); // irá retornar que ele não é premium
+		student01.setAvaliarUsuario(5); // irá retornar que ele não é premium
 		
-		// Assinar plano Premium e tentar novamente avaliar, vai retornar no final certo.
+		// Assinar plano Premium e tentar novamente avaliar
 		student01.setAssinar(1);
-		student01.setAvaliarUsuario(5);
+		student01.setAvaliarUsuario(1);
 		System.out.print("Olá " + student01.getNome() + " seu idioma de interesse é " + student01.getIdiomaInteresse());
 		System.out.println(" e seu nível atual é " + student01.getNivelIdioma() + ".");
-		System.out.println("Seu plano atual é: " + student01.getAssinar() + ". Retorno de avaliar usuário: " + student01.getAvaliarUsuario() + ".");
-		System.out.println("");
+		System.out.println("Seu plano atual é: " + student01.getAssinar() + ". Retorno de avalar usuário: " + student01.getAvaliarUsuario() + ".");
 	
 		Professor teacher01 = new Professor("Professor Ruy", null, null, null, null, null, null, 0, null, null, (byte) 0, 0, 0, (byte) 0);
 		teacher01.setNome("Senhor Ruy");
 		System.out.println(teacher01.getNome());
 		teacher01.setValGratificacao(3000.00);
 		System.out.println("Olá " + teacher01.getNome() + ", sua gratificação é: R$" + teacher01.getValGratificacao());
-		System.out.println("");
 		
 		// Testes: Conversa Individual e grupo
 		ConversaIndividual A =  new ConversaIndividual(true, 1, "", null, null);
 		A.setTexto("OI, tudo bem?");
 		A.setQtdNotificacao(10);
-		System.out.println("Mensagem: " + A.getTexto() + ". Quantidade de notificações: " + A.getQtdNotificacao());
+		System.out.println(A.getTexto() + A.getQtdNotificacao());
 		
-		ConversaGrupo B = new ConversaGrupo(true, 1, "", "LOL", "Falar sobre lolzinho", "Português", (byte) 0, null, null);
-		B.setTexto("Olá grupo, bora jogar hoje?");
-		System.out.println("Tem notificações? " + B.getNotificacao() + ", quantidade: " + B.getQtdNotificacao());
-		System.out.println("Nome do grupo: " + B.getNomeGrupo() + ", descrição: " + B.getDescricaoGrupo() + " e idioma do grupo: " + B.getIdiomaGrupo());
-		System.out.println("");
-		
-		// Testes: Fórum
-		Forum lolzinho = new Forum(true, "Yasuo foda", "Yasuo seria uma lenda milenar?", null, null);
+		// Testes: Fórum e histórico fórum
+		Forum lolzinho = new Forum(true, "Yasuo foda", "Opa opa", null, null);
 		lolzinho.setNomePostagem("Yasuo Helou");
-		System.out.println("Título postagem " + lolzinho.getNomePostagem() + ". Descrição: " + lolzinho.getDescricaoPostagem());
-		
-		
-		// Os métodos da classe Discover funcionam somente com interface.
+		System.out.println(lolzinho.getNomePostagem());
 	}
 }

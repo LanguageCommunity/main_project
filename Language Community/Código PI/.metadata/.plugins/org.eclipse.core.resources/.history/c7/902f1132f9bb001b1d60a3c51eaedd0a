@@ -150,7 +150,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		if(tipoConta == 1) {
 			this.avaliacao = avaliacao;
 		} else {
-			System.out.println("Sua conta não é Premium");
+			System.out.println("Tu é pobre!");
 		}
 	}
 
@@ -159,7 +159,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		if(tipoConta == 1) {
 			// http:????
 		} else {
-			System.out.print("Sua conta não é Premium");
+			System.out.print("Tu é pobre!");
 		}
 	}
 
@@ -168,7 +168,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		if(tipoConta == 1) {
 			// http:????
 		} else {
-			System.out.print("Sua conta não é Premium");
+			System.out.print("Tu é pobre!");
 		}
 	}
 
@@ -177,7 +177,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		if(tipoConta == 1) {
 			// http:????
 		} else {
-			System.out.print("Sua conta não é Premium");
+			System.out.print("Tu é pobre!");
 		}
 	}
 
@@ -186,7 +186,7 @@ private int tipoConta; // Conta 1 = Premium - Conta 0 = Normal
 		if(tipoConta == 1) {
 			// http:????
 		} else {
-			System.out.print("Sua conta não é Premium");
+			System.out.print("Tu é pobre!");
 		}
 	}
 }
