@@ -27,7 +27,7 @@ public class Language {
 		Professor teacher01 = new Professor("Professor Ruy", null, null, null, null, null, null, 0, null, null, (byte) 0, 0, 0, (byte) 0);
 		teacher01.setNome("Senhor Ruy");
 		System.out.println(teacher01.getNome());
-		teacher01.setValGratificacao(17000.00);
+		teacher01.setValGratificacao(3000.00);
 		System.out.println("Olá " + teacher01.getNome() + ", sua gratificação é: R$" + teacher01.getValGratificacao());
 		System.out.println("");
 		
